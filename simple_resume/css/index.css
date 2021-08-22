@@ -1,3 +1,122 @@
+*{
+    margin: 0;
+}
+
 html {
-    background-color: rgb(247, 242, 242);
+    background-color: #fff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.full-name {
+    margin: 10px 0 10px 5px;
+    padding: 10px 0 10px 0;
+    color:rgb(1, 1, 248);
+    font-weight:bold;
+    font-size: 50px; 
+   
+}
+
+.phone-number, 
+.primary-email, 
+.skype-id,
+.linkedin-info,
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.phone-number img,
+.primary-email img,
+.skype-id img,
+.linkedin-info img,
+.address img{
+    width: 30px;
+    height: 30px;
+}
+
+.skype-id img,
+.address img{
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px
+}
+
+.address .text-section,
+.skype-id .text-section{
+    margin-left: 5px
+}
+
+p {
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+    font-size: large;   
+    display:flex;
+}
+
+ul li {
+    text-align: justify;
+    margin: 3px 0px 3px 0px;
+    font-size: large;   
+
+}
+
+h2 {
+    color:rgb(43, 43, 247);
+}
+
+h3, .duration, .place {
+    margin: 8px;
+    font-size: large;   
+
+}
+
+
+@media only screen and (min-width: 700px){
+    .contact-info {
+        display: flex;
+       }
+
+    header{
+        display: block;
+        position: fixed;
+    }
+
+    main{
+        display: block;
+        min-height: 70%;
+        padding-top: 10em;
+        padding-bottom: 8em;
+        }
+       
+        
+    .base-element
+    {
+        display: flex;
+    }
+
+    aside {
+        margin: 5px;
+        display: flex;
+        max-width: 50px;
+    }
+
+    article{
+        width: 75%;
+        margin-left: 100px;
+    }
+
+    aside img {
+        height: 150px;
+        vertical-align: middle;
+    }
+
+
 }
